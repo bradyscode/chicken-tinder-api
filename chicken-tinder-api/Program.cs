@@ -1,3 +1,5 @@
+using chicken_tinder_api.Interfaces.Location_Service;
+
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
@@ -8,6 +10,9 @@ builder.Services.AddSwaggerGen();
 
 //IOptions pattern
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
+//dependency injection
+builder.Services.AddScoped<ILocationServices, LocationServices>();
 
 var app = builder.Build();
 
