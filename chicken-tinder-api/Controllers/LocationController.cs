@@ -24,5 +24,11 @@ namespace chicken_tinder_api.Controllers
         {
             return _locationServices.GetLocation(ip);
         }
+
+        [HttpGet("/CustomLocation/{location}")]
+        public void SetLocation(string location)
+        {
+            _locationServices.SetLocation(location);
+        }
     }
 }

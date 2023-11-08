@@ -22,5 +22,11 @@ namespace chicken_tinder_api.Interfaces.Location_Service
 
             return ipInfo;
         }
+
+        public void SetLocation(string location)
+        {
+            IpInfo ipInfo = new IpInfo();
+            ipInfo.City = location;
+        }
     }
 }
