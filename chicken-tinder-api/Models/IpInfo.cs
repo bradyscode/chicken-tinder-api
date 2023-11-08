@@ -4,6 +4,17 @@ namespace chicken_tinder_api.Models
 {
     public class IpInfo
     {
+        private string location;
+
+        public IpInfo()
+        {
+        }
+
+        public IpInfo(string location)
+        {
+            this.City = location;
+        }
+
         [JsonProperty("ip")]
         public string Ip { get; set; }
 
