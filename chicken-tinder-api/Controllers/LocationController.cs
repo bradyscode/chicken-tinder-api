@@ -25,6 +25,7 @@ namespace chicken_tinder_api.Controllers
             return _locationServices.GetLocation(ip);
         }
 
+        //option to set location if ip isnt found
         [HttpGet("/CustomLocation/{location}")]
         public void SetLocation(string location)
         {
