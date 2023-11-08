@@ -1,4 +1,4 @@
-﻿using chicken_tinder.Models;
+﻿using chicken_tinder_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -6,7 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 
-namespace chicken_tinder.Controllers
+namespace chicken_tinder_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

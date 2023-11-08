@@ -1,4 +1,4 @@
-﻿namespace chicken_tinder.Models
+﻿namespace chicken_tinder_api.Models
 {
     public class User
     {
